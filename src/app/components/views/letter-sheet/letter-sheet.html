@@ -1,13 +1,13 @@
 <main class="paper container container-sm">
-  <h2>Letter Sheet</h2>
+  <h2>Vornamen-Blatt</h2>
   <div class="form-group">
     <label for="text">Vorname</label>
     <input
       id="text"
       type="text"
+      placeholder="Vorname eingeben"
       [ngModel]="text()"
       (ngModelChange)="text.set($event)"
-      placeholder="Type a word"
     />
   </div>
   <button

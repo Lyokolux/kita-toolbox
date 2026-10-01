@@ -3,6 +3,10 @@
   padding: 2rem 1rem;
 }
 
+.paper > h2 {
+  margin-bottom: 0.5em;
+}
+
 .preview {
   margin-top: 2rem;
 }
