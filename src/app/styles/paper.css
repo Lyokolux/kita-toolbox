@@ -275,7 +275,7 @@ audio:not([controls]) {
 }
 
 img {
-  border-style: none;
+  border: none;
 }
 
 svg:not(:root) {
@@ -314,7 +314,7 @@ html [type='button'] {
 [type='reset']::-moz-focus-inner,
 [type='submit']::-moz-focus-inner,
 button::-moz-focus-inner {
-  border-style: none;
+  border: none;
   padding: 0;
 }
 
@@ -520,10 +520,8 @@ kbd {
 pre {
   color: var(--inverse-primary);
   background-color: var(--primary-shaded-70);
-  border-color: var(--primary-shaded-50);
+  border: 1px solid var(--primary-shaded-50);
   border-radius: 3px;
-  border-style: solid;
-  border-width: 1px;
   display: block;
   font-size: 80%;
   line-height: 1.5;
@@ -604,9 +602,7 @@ img {
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  border-color: var(--primary);
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid var(--primary);
   display: block;
   height: auto;
   max-width: 100%;
@@ -718,9 +714,7 @@ table.table-alternating tbody tr:nth-of-type(even) {
 
 /* Utilities */
 .border {
-  border-color: var(--primary);
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid var(--primary);
 }
 
 .border,
@@ -773,9 +767,7 @@ table.table-alternating tbody tr:nth-of-type(even) {
 }
 
 .child-borders > * {
-  border-color: var(--primary);
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid var(--primary);
 }
 
 .border-white {
@@ -859,16 +851,12 @@ table.table-alternating tbody tr:nth-of-type(even) {
   flex-direction: column;
 }
 .collapsible:nth-of-type(1) {
-  border-top-color: var(--muted-light);
-  border-top-style: solid;
-  border-top-width: 1px;
+  border-top: 1px solid var(--muted-light);
 }
 .collapsible .collapsible-body {
-  border-bottom-color: var(--muted-light);
+  border-bottom: 1px solid var(--muted-light);
   background-color: var(--white-dark-light-80);
   transition: all 235ms ease-in-out 0s;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
   margin: 0;
   max-height: 0;
   opacity: 0;
@@ -889,9 +877,7 @@ table.table-alternating tbody tr:nth-of-type(even) {
 }
 .collapsible > label {
   color: var(--primary);
-  border-bottom-color: var(--muted-light);
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
+  border-bottom: 1px solid var(--muted-light);
   display: inline-block;
   font-weight: 600;
   margin: 0 0 -1px;
@@ -904,13 +890,11 @@ table.table-alternating tbody tr:nth-of-type(even) {
 }
 
 .alert {
-  border-color: var(--primary);
+  border: 2px solid var(--primary);
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  border-style: solid;
-  border-width: 2px;
   margin-bottom: 20px;
   padding: 15px;
   width: 100%;
@@ -1022,7 +1006,7 @@ table.table-alternating tbody tr:nth-of-type(even) {
   display: none;
 }
 .alert-state:checked + .dismissible {
-  border-width: 0;
+  border: 0;
   margin: 0;
   max-height: 0;
   opacity: 0;
@@ -1068,9 +1052,7 @@ article p {
   border-top-right-radius: 15px 225px;
   color: var(--white);
   background-color: var(--muted);
-  border-color: var(--primary);
-  border: 2px solid;
-  border-color: transparent;
+  border: 2px solid transparent;
   display: inline-block;
   font-size: 75%;
   font-weight: 700;
@@ -1140,12 +1122,10 @@ button,
   box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
   transition: all 235ms ease-in-out 0s;
   color: var(--primary);
-  border-color: var(--primary);
+  border: 2px solid var(--primary);
   background-color: var(--main-background);
   align-self: center;
   background-image: none;
-  border-style: solid;
-  border-width: 2px;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
@@ -1193,9 +1173,7 @@ button:hover,
 button:focus,
 .paper-btn:focus,
 [type='button']:focus {
-  border-color: var(--secondary);
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid var(--secondary);
   box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
 }
 button:active,
@@ -1420,11 +1398,9 @@ button.btn-muted-outline:hover:active,
 .card {
   transition: all 235ms ease 0s;
   box-shadow: 15px 28px 25px -18px rgba(0, 0, 0, 0.2);
-  border-color: var(--muted-light);
+  border: 2px solid var(--muted-light);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-style: solid;
-  border-width: 2px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1438,16 +1414,13 @@ button.btn-muted-outline:hover:active,
 .card .card-header,
 .card .card-footer {
   background-color: var(--white-dark);
-  border-color: var(--muted-light);
   padding: 0.75rem 1.25rem;
 }
 .card .card-header {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
+  border-bottom: 2px solid var(--muted-light);
 }
 .card .card-footer {
-  border-top-style: solid;
-  border-top-width: 2px;
+  border-top: 2px solid var(--muted-light);
 }
 .card .card-body {
   flex: 1 1 auto;
@@ -1484,14 +1457,12 @@ input,
 select,
 textarea {
   color: var(--primary);
-  border-color: var(--primary);
+  border: 2px solid var(--primary);
   background: transparent;
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
-  border-style: solid;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  border-width: 2px;
   display: block;
   font-size: 1rem;
   outline: none;
@@ -1500,9 +1471,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--secondary);
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid var(--secondary);
 }
 select {
   height: 2.35rem;
@@ -1563,9 +1532,7 @@ textarea[disabled] {
 }
 .form-group .paper-radio input + span::before,
 .form-group .paper-check input + span::before {
-  border-color: var(--primary);
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid var(--primary);
   content: '';
   display: inline-block;
   height: 1rem;
@@ -1640,13 +1607,11 @@ textarea[disabled] {
 }
 .form-group .paper-switch .paper-switch-slider,
 .form-group .paper-switch-2 .paper-switch-slider {
-  border-color: var(--primary);
+  border: 2px solid var(--primary);
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
-  border-style: solid;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  border-width: 2px;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -1669,13 +1634,11 @@ textarea[disabled] {
 }
 .form-group .paper-switch .paper-switch-slider.round,
 .form-group .paper-switch-2 .paper-switch-slider.round {
-  border-color: var(--primary);
+  border: 2px solid var(--primary);
   border-bottom-left-radius: 0.7rem 1rem;
   border-bottom-right-radius: 1rem 0.9rem;
-  border-style: solid;
   border-top-left-radius: 1rem 1rem;
   border-top-right-radius: 1rem 0.6rem;
-  border-width: 2px;
 }
 .form-group .paper-switch .paper-switch-slider.round::before,
 .form-group .paper-switch-2 .paper-switch-slider.round::before {
@@ -1768,7 +1731,7 @@ textarea[disabled] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-width: 0;
+  border: 0;
   padding: 0;
   /* For Chromium */
   /* For Mozilla Firefox */
@@ -1776,10 +1739,8 @@ textarea[disabled] {
 }
 .form-group input[type='range']::-webkit-slider-runnable-track {
   background: var(--secondary);
-  border-color: var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 18px;
-  border-style: solid;
-  border-width: 1px;
   box-shadow:
     1px 1px 1px #000,
     0 0 1px #0d0d0d;
@@ -1790,15 +1751,13 @@ textarea[disabled] {
 }
 .form-group input[type='range']::-webkit-slider-thumb {
   background: var(--white);
-  border-color: var(--primary);
+  border: 1px solid var(--primary);
   -webkit-appearance: none;
   appearance: none;
   border-bottom-left-radius: 0.7rem 1rem;
   border-bottom-right-radius: 1rem 0.9rem;
-  border-style: solid;
   border-top-left-radius: 1rem 1rem;
   border-top-right-radius: 1rem 0.6rem;
-  border-width: 1px;
   box-shadow:
     1px 1px 1px #000,
     0 0 1px #0d0d0d;
@@ -1820,13 +1779,11 @@ textarea[disabled] {
 }
 .form-group input[type='range']::-moz-range-thumb {
   background: var(--white);
-  border-color: var(--primary);
+  border: 1px solid var(--primary);
   border-bottom-left-radius: 0.7rem 1rem;
   border-bottom-right-radius: 1rem 0.9rem;
-  border-style: solid;
   border-top-left-radius: 1rem 1rem;
   border-top-right-radius: 1rem 0.6rem;
-  border-width: 1px;
   box-shadow:
     1px 1px 1px #000,
     0 0 1px #0d0d0d;
@@ -1846,24 +1803,19 @@ textarea[disabled] {
 .form-group input[type='range']::-ms-fill-lower,
 .form-group input[type='range']::-ms-fill-upper {
   background: var(--secondary);
-  border-color: var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 18px;
-  border-style: solid;
-  border-width: 1px;
   box-shadow:
     1px 1px 1px #000,
     0 0 1px #0d0d0d;
 }
 .form-group input[type='range']::-ms-thumb {
   background: var(--white);
-  border-color: var(--primary);
   border: 1px solid #41403e;
   border-bottom-left-radius: 0.7rem 1rem;
   border-bottom-right-radius: 1rem 0.9rem;
-  border-style: solid;
   border-top-left-radius: 1rem 1rem;
   border-top-right-radius: 1rem 0.6rem;
-  border-width: 1px;
   box-shadow:
     1px 1px 1px #000,
     0 0 1px #0d0d0d;
@@ -1903,7 +1855,6 @@ fieldset.form-group {
 .modal .modal-body {
   color: var(--primary);
   background: var(--main-background);
-  border-color: var(--muted-light);
   transition: all 235ms ease-in-out 0s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -2022,10 +1973,8 @@ fieldset.form-group {
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
   background-color: var(--light-dark);
-  border-color: var(--light-dark);
+  border: 2px solid var(--light-dark);
   color: var(--primary-inverse);
-  border-style: solid;
-  border-width: 2px;
   font-size: 0.7em;
   left: 50%;
   min-width: 80px;
@@ -2094,7 +2043,6 @@ fieldset.form-group {
   border-bottom-right-radius: 15px 105px;
   border-top-left-radius: 250px 15px;
   border-top-right-radius: 25px 80px;
-  border-color: var(--primary);
   border: 2px solid;
   box-shadow: 2px 8px 8px -5px rgba(0, 0, 0, 0.3);
   height: 1.2rem;
@@ -2108,7 +2056,6 @@ fieldset.form-group {
   border-top-right-radius: 25px 80px;
   transition: all 235ms ease-in-out 0s;
   background-color: var(--primary-light);
-  border-color: var(--primary);
   border-right: 2px solid;
   display: flex;
   flex-direction: column;
@@ -2209,9 +2156,7 @@ fieldset.form-group {
 }
 .tabs input:checked + label {
   color: var(--primary);
-  border-bottom-color: var(--secondary);
-  border-bottom-style: solid;
-  border-bottom-width: 3px;
+  border-bottom: 3px solid var(--secondary);
 }
 .tabs input[id$='tab1']:checked ~ div[id$='content1'] {
   display: block;
@@ -2258,12 +2203,10 @@ nav .bar1,
 nav .bar2,
 nav .bar3 {
   background-color: var(--primary);
-  border-color: var(--primary);
+  border-bottom: 5px solid var(--primary);
   color: var(--primary);
   border-bottom-left-radius: 15px 5px;
   border-bottom-right-radius: 15px 3px;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
   margin: 6px 0;
   transition: 0.4s;
   width: 2rem;
@@ -2309,18 +2252,14 @@ nav ul.inline li {
 }
 nav a {
   color: var(--primary);
-  border-bottom-color: var(--primary);
+  border-bottom: 5px solid var(--primary);
   background-image: none;
   border-bottom-left-radius: 15px 3px;
   border-bottom-right-radius: 15px 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
   padding-bottom: 0.1rem;
 }
 nav a:hover {
-  border-color: var(--primary-light);
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
+  border-bottom: 5px solid var(--primary-light);
 }
 nav ul.inline li a {
   font-size: 1.3rem;
@@ -2367,13 +2306,11 @@ nav div.collapsible-body {
   padding: none;
 }
 nav .collapsible label {
-  border-color: var(--primary);
+  border: 2px solid var(--primary);
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
-  border-style: solid;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  border-width: 2px;
 }
 nav .collapsible > button {
   border: 0;
