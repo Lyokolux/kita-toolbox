@@ -1,0 +1,29 @@
+<main class="paper container container-sm">
+  <h2>Letter Sheet</h2>
+  <div class="form-group">
+    <label for="text">Vorname</label>
+    <input
+      id="text"
+      type="text"
+      [ngModel]="text()"
+      (ngModelChange)="text.set($event)"
+      placeholder="Type a word"
+    />
+  </div>
+  <button
+    class="paper-btn btn-primary"
+    type="button"
+    (click)="generatePdf()"
+    [disabled]="lines().length === 0"
+  >
+    PDF erzeugen
+  </button>
+  @if (lines().length > 0) {
+    <section class="preview">
+      <h4>Preview</h4>
+      @for (line of lines(); track $index) {
+        <p class="line">{{ line }}</p>
+      }
+    </section>
+  }
+</main>

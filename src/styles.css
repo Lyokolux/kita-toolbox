@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'papercss/dist/paper.min.css';
+
+:root {
+  /* one minute to midnight */
+  --c-primary: #003888;
+  /* banana pepper */
+  --c-secondary: #f3d231;
+  /** Radishical **/
+  --c-tertiary: #e74971;
+  --c-secondary-bg: #fff8d6;
+  --c-background: #757575;
+  --green: #5ca482;
+}
+
+html {
+  background-image: url('app/assets/geometry2.svg');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  line-height: 1;
+}
+
+body {
+  margin: 0;
+}
