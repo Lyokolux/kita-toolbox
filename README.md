@@ -1,59 +1,33 @@
-# KitaToolbox
+# Kita Toolbox
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.0.
+A small web toolbox for daycare (Kita) educators, built with Angular. It produces printable worksheets for children and is currently nearly nothing.
 
-## Development server
+## Tools
 
-To start a local development server, run:
+### Vornamen-Blatt (first name sheet)
 
-```bash
-ng serve
-```
+Enter a child's first name and generate an A4 PDF for handwriting practice:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- one line per letter of the name (in uppercase), followed by a line with the whole name
+- a dotted guide line under each row to trace and write on
+- a live preview of the lines before export
+- the PDF is downloaded as `<name>.pdf`
 
-## Code scaffolding
+PDFs are generated entirely in the browser with [jsPDF](https://github.com/parallax/jsPDF). No data leaves the device.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Getting started
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Requirements: Node.js and npm.
 
 ```bash
-ng generate --help
+npm install
+npm start
 ```
 
-## Building
+Then open `http://localhost:4200/`. The app reloads automatically when you change source files.
 
-To build the project run:
+## Tech stack
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Angular](https://angular.dev)
+- UI look and feel from [PaperCSS](https://www.getpapercss.com/) for the hand-drawn look
+- [jsPDF](https://github.com/parallax/jsPDF) for PDF generation
