@@ -122,43 +122,6 @@ html.dark {
   --primary-inverse: #41403e;
 }
 
-/**
-  PaperCSS Mixins
-*/
-/**
-  Assign a border style to a component selector.
-  @param    integer
-  @default  1
-*/
-/**
-  Mixin for setting responsive breakpoints
-  @param string | integer
-  @default null
-*/
-/**
-  Useful helper mixins
-*/
-/*
-  Add transform: translate() with browser prefixes.
-  Same syntax for translate() and translate3d()
-  To get 3D add a $z value and set 'true'
-  @param string | boolean
-  @default 0 | false
-*/
-/*
-  Add global transition styles to selector
-  @param string
-  @default all | 235ms | ease-in-out | 0
-*/
-/**
-  Set the shadow type for a component
-  @param    string
-  @default  regular
-*/
-/**
-  Sets a striped background on a component
-  @param    string
-*/
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* stylelint-disable */
 html {
@@ -518,7 +481,7 @@ kbd {
 }
 
 pre {
-  color: var(--inverse-primary);
+  color: var(--primary-inverse);
   background-color: var(--primary-shaded-70);
   border: 1px solid var(--primary-shaded-50);
   border-radius: 3px;
@@ -532,7 +495,7 @@ pre {
   word-wrap: break-word;
 }
 pre code {
-  color: var(--inverse-primary);
+  color: var(--primary-inverse);
   background: transparent;
   display: block;
   font-size: inherit;
@@ -574,13 +537,22 @@ h6 {
 }
 
 h1 {
-  font-size: 4rem;
-}
-
-h2 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 780px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+}
 h3 {
   font-size: 2rem;
 }
@@ -1858,7 +1830,7 @@ fieldset.form-group {
   transition: all 235ms ease-in-out 0s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border: 2px solid;
+  border: 2px solid var(--muted-light);
   left: 50%;
   padding: 1.25rem;
   position: absolute;
@@ -2056,7 +2028,7 @@ fieldset.form-group {
   border-top-right-radius: 25px 80px;
   transition: all 235ms ease-in-out 0s;
   background-color: var(--primary-light);
-  border-right: 2px solid;
+  border-right: 2px solid var(--primary);
   display: flex;
   flex-direction: column;
   font-size: 0.6rem;
@@ -2227,11 +2199,19 @@ nav.split-nav {
   justify-content: space-between;
 }
 nav.fixed {
-  left: 0;
   position: fixed;
+  left: 0;
   right: 0;
-  top: 0;
+  bottom: 0;
 }
+
+@media screen and (min-width: 760px) {
+  nav.fixed {
+    top: 0;
+    bottom: unset;
+  }
+}
+
 nav div {
   margin: 0 1rem;
 }

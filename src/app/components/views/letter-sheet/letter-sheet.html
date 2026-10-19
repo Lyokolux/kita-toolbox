@@ -1,5 +1,24 @@
-<main class="paper container container-sm">
-  <h2>Vornamen-Blatt</h2>
+<nav class="border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="#">Kita Toolbox</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1" />
+    <label for="collapsible1">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </label>
+    <div class="collapsible-body">
+      <ul class="inline">
+        <li><a href="#">Übungsblatt</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="paper container container-m">
+  <h2>Übungs<wbr />blatt</h2>
   <div class="form-group">
     <label for="text">Vorname</label>
     <input
@@ -18,12 +37,4 @@
   >
     PDF erzeugen
   </button>
-  @if (lines().length > 0) {
-    <section class="preview">
-      <h4>Preview</h4>
-      @for (line of lines(); track $index) {
-        <p class="line">{{ line }}</p>
-      }
-    </section>
-  }
 </main>

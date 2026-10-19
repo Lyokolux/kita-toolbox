@@ -4,13 +4,12 @@ A small web toolbox for daycare (Kita) educators, built with Angular. It produce
 
 ## Tools
 
-### Vornamen-Blatt (first name sheet)
+### Übungsblatt (first name sheet)
 
 Enter a child's first name and generate an A4 PDF for handwriting practice:
 
 - one line per letter of the name (in uppercase), followed by a line with the whole name
 - a dotted guide line under each row to trace and write on
-- a live preview of the lines before export
 - the PDF is downloaded as `<name>.pdf`
 
 PDFs are generated entirely in the browser with [jsPDF](https://github.com/parallax/jsPDF). No data leaves the device.

@@ -1,4 +1,4 @@
-@import 'papercss/dist/paper.min.css';
+@import './app/styles/paper.css';
 
 :root {
   /* one minute to midnight */

@@ -1,6 +1,12 @@
 :host {
   display: block;
-  padding: 2rem 1rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 760px) {
+  :host {
+    padding-top: 4rem;
+  }
 }
 
 .paper > h2 {
