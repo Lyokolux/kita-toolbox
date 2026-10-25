@@ -30,6 +30,9 @@ yarn-error.log
 !.vscode/mcp.json
 .history/*
 
+# My scripts
+deploy.sh
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/
