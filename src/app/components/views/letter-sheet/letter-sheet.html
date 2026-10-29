@@ -9,10 +9,33 @@
       [ngModel]="text()"
       (ngModelChange)="text.set($event)"
     />
+    <label for="use-maternelle" class="paper-check" style="margin-top: 1rem">
+      <input
+        id="use-maternelle"
+        type="checkbox"
+        [ngModel]="useMaternelle()"
+        (ngModelChange)="useMaternelle.set($event)"
+      />
+      <span>Schrift „Maternelle“ verwenden</span>
+    </label>
+    <div
+      style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: start"
+    >
+      @for (symbol of SYMBOLS; track $index) {
+        <button
+          class="btn-small"
+          style="padding-inline: 0.75rem"
+          (click)="text.update((t) => t + symbol)"
+        >
+          {{ symbol }}
+        </button>
+      }
+    </div>
   </div>
   <button
     class="paper-btn btn-primary"
     type="button"
+    style="margin-top: 1rem"
     (click)="generatePdf()"
     [disabled]="lines().length === 0"
   >

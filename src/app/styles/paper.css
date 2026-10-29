@@ -1104,16 +1104,7 @@ button,
   outline: none;
   padding: 0.75rem;
 }
-@media only screen and (max-width: 520px) {
-  button,
-  .paper-btn,
-  [type='button'] {
-    display: inline-block;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-}
+
 button.btn-large,
 .paper-btn.btn-large,
 [type='button'].btn-large {

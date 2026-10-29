@@ -4,10 +4,6 @@ A small web toolbox for daycare (Kita) educators, built with Angular. It produce
 
 ## TODO
 
-- font: Maternellecolor graphisme
-- add other symbols: arrows, star, boucles de ee ou de ll, boucles de yyy, arrow up and down, square, triangle, circle
--
-
 ## Tools
 
 ### Übungsblatt (first name sheet)
