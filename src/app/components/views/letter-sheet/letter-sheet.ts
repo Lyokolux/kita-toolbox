@@ -121,7 +121,7 @@ export class LetterSheet {
     doc.setFontSize(FONT_SIZE * 0.7);
     const label = 'Vorname: ';
     doc.text(label, margin, margin + 1 * lineHeight);
-    drawText(this.text(), margin + doc.getTextWidth(label), margin + 1 * lineHeight);
+    doc.text(this.text(), margin + doc.getTextWidth(label), margin + 1 * lineHeight);
     doc.setFont(FONT_NAME, 'normal');
     doc.text(`Datum:`, margin, margin + 2 * lineHeight);
 
