@@ -107,8 +107,6 @@ export class LetterSheet {
         charSpace * Math.max(chars.length - 1, 0),
       );
     };
-    doc.setFont(FONT_NAME, 'normal');
-    doc.setFontSize(FONT_SIZE);
 
     const margin = 20;
     const lineHeight = FONT_SIZE * 0.5;
@@ -116,6 +114,7 @@ export class LetterSheet {
     const pageHeight = doc.internal.pageSize.getHeight();
 
     doc.setFont(FONT_NAME, 'bold');
+    doc.setFontSize(FONT_SIZE);
     doc.text('Schreibübung', pageWidth / 2, margin, { align: 'center' });
     doc.setFont(FONT_NAME, 'normal');
 
